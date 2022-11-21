@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container mt-5 mb-5">
+    <div class="btn-group mb-3 " role="group" aria-label="Basic example">
+        <button id="save_btn" type="button" class="btn btn-primary" disabled>
+            <h1 class="btn-text">
+                Save
+            </h1>
+        </button>
+        <button id="discard_btn" type="button" class="btn btn-danger" disabled>
+            <h1 class="btn-text">
+                Discard
+            </h1>
+        </button>
+    </div>
+
+    <form id="new-todo-form" class="ui form mb-3">
+        <h2>
+            <input id="new-todo-form-input" type="text" name="title" maxlength="25" placeholder="Add new task">
+        </h2>
+        <br>
+    </form>
+
+    <ul id="sortable" class="list-group mb-3">
+    </ul>
+</div>
+{% endblock %}
+

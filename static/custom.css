@@ -1,0 +1,38 @@
+
+.big-checkbox {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+input[type=text].todo-item {
+	border: none
+}
+
+input[type=text].todo-item:focus{
+    outline: none;
+}
+
+.hidden{
+	display: none;
+}
+
+.edit {
+	padding: 1px 2px;
+}
+
+#new-todo-form-input {
+	padding: 5px;
+	height: 60px;
+	margin-top: 5px;
+	padding-left: 10px;
+}
+
+.btn-text {
+	padding: 5px;
+}
+.list-group-item {
+    max-width: 500px;
+    white-space: nowrap;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - Fastapi</title>
+
+    <script src="./static/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./static/jquery-ui.js"></script>
+
+    <script defer src="./static/bootstrap.bundle.min.js"></script>
+    <script defer src="./static/custom.js"></script>
+
+    <link rel="stylesheet" href="./static/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./static/custom.css"/>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 50px;">
+            {% include 'toasts/discard.html' %}
+            {% include 'toasts/error.html' %}
+            {% include 'toasts/success.html' %}
+        </div>
+    </div>
+    <div class="row">
+        {% block body %}
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>
